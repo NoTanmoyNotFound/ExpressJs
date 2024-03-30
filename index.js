@@ -8,7 +8,8 @@ app.get('/', (req, res) => {
 })
 app.get('/page', (req, res) => {
 //   res.send('Hello World!')
-    res.sendFile(path.join(__dirname ,'index.html'))
+    // res.sendFile(path.join(__dirname ,'index.html'))
+    res.json({"Tanmoy":21})
 })
 
 app.listen(port, () => {
